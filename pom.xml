@@ -21,6 +21,7 @@
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
 		<org.mapstruct.version>1.3.0.Final</org.mapstruct.version>
+		<spring-boot.repackage.skip>true</spring-boot.repackage.skip>
 	</properties>
 
 	<dependencies>
@@ -141,8 +142,6 @@
 							-Amapstruct.defaultComponentModel=spring
 						</compilerArg>
 					</compilerArgs>
-					<source>${java.version}</source>
-					<target>${java.version}</target>
 				</configuration>
 			</plugin>
 		</plugins>
